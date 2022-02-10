@@ -119,6 +119,15 @@ let removecraftingid = [
 	 'tconstruct:common/materials/queeens_slime_ingot_from_block',
 	 'tconstruct:common/materials/manyullyn_ingot_from_block',
 	 'tconstruct:common/materials/hepatizon_ingot_from_block',
+	 'boss_tools:iron_plate',
+	 'jaopca:immersiveengineering.material_to_plate_hammer.netherite',
+	 'jaopca:immersiveengineering.material_to_plate_hammer.desh',
+	 'jaopca:immersiveengineering.material_to_plate_hammer.tin',
+	 'jaopca:immersiveengineering.material_to_plate_hammer.bronze',
+	 'jaopca:immersiveengineering.material_to_plate_hammer.invar',
+	 'jaopca:immersiveengineering.material_to_plate_hammer.signalum',
+	 'jaopca:immersiveengineering.material_to_plate_hammer.lumium',
+	 'jaopca:immersiveengineering.material_to_plate_hammer.enderium'
   ]
   
   let removecrafting = [
@@ -450,7 +459,13 @@ let removecraftingid = [
 	'create:shaft',
 	'create:cogwheel',
 	'create:large_cogwheel',
-	'create:andesite_alloy'
+	'create:andesite_alloy',
+	'create:brass_casing',
+	'create:andesite_casing',
+	'create:sail_frame',
+	'create:basin',
+	'create:empty_blaze_burner',
+	'create:depot',
   ]
   
   let removecraftingoredictsd = [

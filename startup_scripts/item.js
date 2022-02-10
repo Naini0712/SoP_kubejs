@@ -1,6 +1,6 @@
 onEvent('item.registry', event => {
     //Aluminum Sheet
-    event.create('sheet_aluminum').displayName('Aluminum Sheet').texture('assets\kubejs\textures\item\example_item.png'),
+    event.create('sheet_aluminum').displayName('Aluminum Sheet'),
     //Isotopes of Einsteinium
     event.create('einsteinium_252').displayName('Einsteinium-252'),
     event.create('einsteinium_254').displayName('Einsteinium-254'),
@@ -22,7 +22,9 @@ onEvent('item.registry', event => {
     event.create('fuel_einsteinium_252_l_d').displayName('Depleted LEEs-252 Fuel'),
     event.create('fuel_einsteinium_252_h_d').displayName('Depleted HEEs-252 Fuel'),
     event.create('fuel_einsteinium_254_l_d').displayName('Depleted LEEs-254 Fuel'),
-    event.create('fuel_einsteinium_252_h_d').displayName('Depleted HEEs-254 Fuel'),
-    //Andesite Alloy Block
-    event.create('andesite_alloy_block').displayName('Block of Andesite Alloy')
+    event.create('fuel_einsteinium_252_h_d').displayName('Depleted HEEs-254 Fuel')
+    //Andesite Alloy Plate
+    event.create('plate_andesite_alloy').displayName('Andesite Alloy Plate'),
+    //Zinc Plate
+    event.create('plate_zinc').displayName('Zinc Plate')
   })
