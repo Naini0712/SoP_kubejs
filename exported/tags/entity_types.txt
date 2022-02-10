@@ -1,0 +1,332 @@
+To refresh this file, delete it and run /reload command again! Last updated: Jan 22, 2022 10:19:36 PM
+
+#iceandfire:scares_cockatrices
+
+#tconstruct:rare_mobs
+- minecraft:wither
+- minecraft:ender_dragon
+- minecraft:elder_guardian
+- minecraft:evoker
+
+#blue_skies:poison_allies
+- blue_skies:arachnarch
+- blue_skies:nested_spider
+- blue_skies:venom_spit
+- blue_skies:venom_spider
+- minecraft:spider
+- minecraft:cave_spider
+
+#botania:cocoon/common
+- minecraft:pig
+- minecraft:cow
+- minecraft:chicken
+- minecraft:rabbit
+- minecraft:sheep
+
+#iceandfire:fear_dragons
+- minecraft:cow
+- minecraft:sheep
+- minecraft:pig
+- minecraft:chicken
+- minecraft:cat
+- minecraft:fox
+- minecraft:horse
+- minecraft:mooshroom
+- minecraft:ocelot
+- minecraft:llama
+- minecraft:panda
+- minecraft:parrot
+- minecraft:polar_bear
+- minecraft:rabbit
+- minecraft:strider
+- minecraft:trader_llama
+- minecraft:wolf
+- minecraft:hoglin
+
+#abyss:entity
+- theabyss:abyssspider
+- theabyss:abysscreeper
+- theabyss:abysscorruptedcow
+- theabyss:abyssguard
+- theabyss:netherscorpion
+- theabyss:endspider
+- theabyss:soulguard
+- theabyss:night_hunter
+- theabyss:abyss_forest_zombie
+- theabyss:eyelie_entity
+- theabyss:phantom_abyss_entity
+- theabyss:soul_lizard
+- theabyss:abyss_elder
+- theabyss:the_lurker
+- theabyss:soul_lizard_jungle
+- theabyss:the_abyss_wolf
+- theabyss:the_roka
+- theabyss:the_abyss_dire_wolf
+- theabyss:fire_fly
+- theabyss:abyss_tag
+- theabyss:abyss_spider_lv_l_2
+- theabyss:abyss_forest_zombie_lv_l_3
+- theabyss:soul_guard_lv_l_4
+- theabyss:abyss_guard_lv_l_4
+- theabyss:nether_scorpion_lv_l_4
+- theabyss:abyss_guard_lv_l_1
+- theabyss:abyss_forest_zombie_lv_l_4
+- theabyss:abyss_spider_lv_l_3
+- theabyss:phantom_abyss_entity_lv_l_3
+- theabyss:slime_spider
+- theabyss:the_roka_end_boss
+- theabyss:light_fish
+- theabyss:eot_light_fish
+- theabyss:eot_light_fish_2
+- theabyss:eot_light_fish_3
+- theabyss:eot_light_fish_4
+- theabyss:jungle_light_fish
+- theabyss:jungle_light_fish_green
+
+#iceandfire:villagers
+- minecraft:villager
+- minecraft:wandering_trader
+
+#iceandfire:lightning_dragon_targets
+- #iceandfire:dragon_targets
+
+#botania:cocoon/rare_aquatic
+- minecraft:dolphin
+
+#tconstruct:melting/show_in_default
+- minecraft:iron_golem
+- minecraft:snow_golem
+- minecraft:villager
+- minecraft:player
+
+#projecte:randomizer/peaceful
+- minecraft:sheep
+- minecraft:pig
+- minecraft:cow
+- minecraft:mooshroom
+- minecraft:chicken
+- minecraft:bat
+- minecraft:villager
+- minecraft:squid
+- minecraft:ocelot
+- minecraft:wolf
+- minecraft:horse
+- minecraft:rabbit
+- minecraft:donkey
+- minecraft:mule
+- minecraft:polar_bear
+- minecraft:llama
+- minecraft:parrot
+- minecraft:dolphin
+- minecraft:cod
+- minecraft:salmon
+- minecraft:pufferfish
+- minecraft:tropical_fish
+- minecraft:turtle
+- minecraft:cat
+- minecraft:fox
+- minecraft:panda
+- minecraft:trader_llama
+- minecraft:wandering_trader
+- minecraft:strider
+
+#botania:cocoon/rare
+- minecraft:horse
+- minecraft:donkey
+- minecraft:wolf
+- minecraft:ocelot
+- minecraft:cat
+- minecraft:parrot
+- minecraft:llama
+- minecraft:fox
+- minecraft:panda
+- minecraft:turtle
+- quark:frog?
+
+#iceandfire:sheep
+- minecraft:sheep
+
+#projecte:randomizer/hostile
+- minecraft:zombie
+- minecraft:skeleton
+- minecraft:creeper
+- minecraft:spider
+- minecraft:enderman
+- minecraft:silverfish
+- minecraft:zombified_piglin
+- minecraft:piglin
+- minecraft:piglin_brute
+- minecraft:hoglin
+- minecraft:zoglin
+- minecraft:ghast
+- minecraft:blaze
+- minecraft:slime
+- minecraft:witch
+- minecraft:rabbit
+- minecraft:endermite
+- minecraft:stray
+- minecraft:wither_skeleton
+- minecraft:skeleton_horse
+- minecraft:zombie_horse
+- minecraft:zombie_villager
+- minecraft:husk
+- minecraft:guardian
+- minecraft:evoker
+- minecraft:vex
+- minecraft:vindicator
+- minecraft:shulker
+- minecraft:drowned
+- minecraft:phantom
+- minecraft:pillager
+
+#tconstruct:piggybackpack_blacklist
+
+#botania:shaded_mesa_blacklist
+- minecraft:ender_dragon
+- minecraft:wither
+- minecraft:item_frame
+- minecraft:end_crystal
+- minecraft:painting
+- botania:corporea_spark
+- botania:doppleganger
+- botania:flame_ring
+- botania:magic_landmine
+- botania:magic_missile
+- botania:mana_burst
+- botania:pink_wither
+- botania:spark
+- botania:player_mover
+
+#minecraft:raiders
+- minecraft:evoker
+- minecraft:pillager
+- minecraft:ravager
+- minecraft:vindicator
+- minecraft:illusioner
+- minecraft:witch
+- blue_skies:summoner
+- blue_skies:alchemist
+
+#tconstruct:melting/hide_in_default
+- minecraft:giant
+
+#projecte:blacklist/interdiction
+
+#iceandfire:dragon_targets
+- minecraft:cow
+- minecraft:sheep
+- minecraft:pig
+- minecraft:chicken
+- minecraft:fox
+- minecraft:horse
+- minecraft:mooshroom
+- minecraft:ocelot
+- minecraft:llama
+- minecraft:panda
+- minecraft:parrot
+- minecraft:polar_bear
+- minecraft:rabbit
+- minecraft:trader_llama
+- minecraft:wolf
+- minecraft:cat
+- minecraft:pillager
+- minecraft:cat
+- minecraft:strider
+- minecraft:piglin
+- minecraft:hoglin
+- minecraft:zoglin
+
+#forge:slimes
+- minecraft:slime
+- tconstruct:earth_slime
+- tconstruct:sky_slime
+- tconstruct:ender_slime
+- tconstruct:terracube
+
+#botania:cocoon/common_aquatic
+- minecraft:cod
+- minecraft:salmon
+- minecraft:tropical_fish
+- minecraft:pufferfish
+- minecraft:squid
+- quark:crab?
+
+#per-viam-invenire:replace_vanilla_navigator
+- mekanism:robit
+
+#minecraft:impact_projectiles
+- #minecraft:arrows
+- minecraft:snowball
+- minecraft:fireball
+- minecraft:small_fireball
+- minecraft:egg
+- minecraft:trident
+- minecraft:dragon_fireball
+- minecraft:wither_skull
+- projecte:fire_projectile
+- projecte:lava_projectile
+- projecte:lens_projectile
+- projecte:swrg_projectile
+- projecte:water_projectile
+- mekanism:flame
+
+#minecraft:beehive_inhabitors
+- minecraft:bee
+
+#forge:creepers
+- minecraft:creeper
+
+#iceandfire:chickens
+- minecraft:chicken
+
+#minecraft:skeletons
+- minecraft:skeleton
+- minecraft:stray
+- minecraft:wither_skeleton
+
+#iceandfire:cyclops_unliftables
+- minecraft:ravager
+
+#minecraft:arrows
+- minecraft:arrow
+- minecraft:spectral_arrow
+- projecte:homing_arrow
+
+#projecte:blacklist/swrg
+
+#tconstruct:bacon_producer
+- minecraft:pig
+- minecraft:piglin
+- minecraft:hoglin
+
+#blue_skies:nature_allies
+- blue_skies:starlit_crusher
+- blue_skies:spewter
+- blue_skies:snow_owl
+- blue_skies:ent_wall
+- blue_skies:ent_root
+- blue_skies:ent_leaf
+- blue_skies:stonelet
+
+#blue_skies:frost_spirits
+- blue_skies:frost_spirit
+- blue_skies:armored_frost_spirit
+- blue_skies:crynocerous
+
+#blue_skies:bosses
+- blue_skies:summoner
+- blue_skies:alchemist
+- blue_skies:starlit_crusher
+- blue_skies:arachnarch
+
+#iceandfire:fire_dragon_targets
+- #iceandfire:dragon_targets
+
+#iceandfire:ice_dragon_targets
+- #iceandfire:dragon_targets
+- minecraft:turtle
+- minecraft:dolphin
+- minecraft:cod
+- minecraft:pufferfish
+- minecraft:salmon
+- minecraft:tropical_fish
