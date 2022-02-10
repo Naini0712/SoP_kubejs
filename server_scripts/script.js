@@ -1673,7 +1673,9 @@ let plates = [
 	'create:brass_sheet',
 	'immersiveengineering:plate_aluminum',
 	'immersiveengineering:plate_uranium',
-	'immersiveengineering:plate_steel'
+	'immersiveengineering:plate_steel',
+	'kubejs:plate_zinc',
+	'kubejs:plate_andesite_alloy'
 ]
 
 let platemts = [
@@ -1695,5 +1697,7 @@ let platemts = [
 	'#forge:ingots/brass',
 	'#forge:ingots/aluminum',
 	'#forge:ingots/uranium',
-	'#forge:ingots/steel'
+	'#forge:ingots/steel',
+	'#forge:ingots/zinc',
+	'create:andesite_alloy'
 ]

@@ -226,7 +226,7 @@ event.shaped('kubejs:hull_brass',
 //Propeller
 event.shaped('create:propeller',
   [' P ','PAP',' P '], {
-    P: '#forge:plates/zinc',
+    P: 'kubejs:plate_zinc',
     A: 'create:andesite_alloy'
   })
 //Sail Frame
