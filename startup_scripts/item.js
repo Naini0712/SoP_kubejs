@@ -1,6 +1,7 @@
 onEvent('item.registry', event => {
-    //Aluminum Sheet
+    //Sheets
     event.create('sheet_aluminum').displayName('Aluminum Sheet'),
+    event.create('sheet_copper').displayName('Copper Sheet'),
     //Isotopes of Einsteinium
     event.create('einsteinium_252').displayName('Einsteinium-252'),
     event.create('einsteinium_254').displayName('Einsteinium-254'),
@@ -23,8 +24,8 @@ onEvent('item.registry', event => {
     event.create('fuel_einsteinium_252_h_d').displayName('Depleted HEEs-252 Fuel'),
     event.create('fuel_einsteinium_254_l_d').displayName('Depleted LEEs-254 Fuel'),
     event.create('fuel_einsteinium_252_h_d').displayName('Depleted HEEs-254 Fuel')
-    //Andesite Alloy Plate
+    //Plates
     event.create('plate_andesite_alloy').displayName('Andesite Alloy Plate'),
-    //Zinc Plate
-    event.create('plate_zinc').displayName('Zinc Plate')
+    event.create('plate_zinc').displayName('Zinc Plate'),
+    event.create('plate_compressed_iron').displayName('Compressed Iron Plate')
   })

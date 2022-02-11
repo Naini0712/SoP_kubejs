@@ -21,6 +21,17 @@ onEvent('recipes', event => {
 })
 
 
+//Remove all types of recipes
+onEvent('recipes', event => {
+  for(let i = 0; i < removerecipeid.length; i++)
+  event.remove({id: removerecipeid[i], type: 'minecraft:crafting_shaped'})
+  for(let i = 0; i < removerecipeoredict.length; i++)
+  event.remove({output: removerecipeoredict[i], type: 'minecraft:crafting_shaped'})
+  for(let i = 0; i < removerecipe.length; i++)
+  event.remove({output: removerecipe[i], type: 'minecraft:crafting_shaped'})
+})
+
+
 
 //Remove all recipes of bookshelves
 onEvent('recipes', event => {
@@ -144,6 +155,23 @@ onEvent('recipes', event => {
     H: Item.of('immersiveengineering:hammer').ignoreNBT(),
     I: platemts[i]
   }).damageIngredient(1).keepIngredient('immersiveengineering:hammer')
+})
+
+
+
+//Casings
+onEvent('recipes', event => {
+for(let i = 0; i < casings.length; i++)
+event.shaped(casings[i],
+['PPP','PWP','PPP'], {
+  P: casingsmts[i],
+  W: 'appliedenergistics2:certus_quartz_wrench'
+}).keepIngredient('appliedenergistics2:certus_quartz_wrench'),
+event.shaped(casings[i],
+['PPP','PWP','PPP'], {
+  P: casingsmts[i],
+  W: 'appliedenergistics2:nether_quartz_wrench'
+}).keepIngredient('appliedenergistics2:nether_quartz_wrench')
 })
 
 
@@ -275,3 +303,25 @@ onEvent('recipes', event => {
   })
 })
 
+//PneumaticCraft
+onEvent('recipes', event => {
+  //Pressure Chamber Wall
+  event.shaped('8x pneumaticcraft:pressure_chamber_wall',
+  ['NRN','RCR','NRN'], {
+    N: '#forge:plates/netherite',
+    R: 'pneumaticcraft:reinforced_bricks',
+    C: '#forge:storage_blocks/compressed_iron'
+  }),
+  //Pressure Chamber Interface
+  event.shapeless('8x pneumaticcraft:pressure_chamber_wall',
+  ['pneumaticcraft:pressure_chamber_wall','kubejs:hull_ciron'], 
+  )
+  //Compressed Iron Machine Hull
+  event.shaped('kubejs:hull_ciron',
+  ['SRS','PCP','SRS'], {
+    C: 'kubejs:casing_ciron',
+    R: 'immersiveengineering:wirecoil_steel',
+    P: 'create:precision_mechanism',
+    S: '#forge:plates/signalum'
+  })
+})

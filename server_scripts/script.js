@@ -214,6 +214,9 @@ let removecraftingid = [
 	 'mekanism:nugget_tin',
 	 'mekanism:nugget_lead',
 	 'mekanism:nugget_uranium',
+	 'thermal:signalum_dust',
+	 'thermal:lumium_dust',
+	 'thermal:enderium_dust',
   ]
   
   let removecraftingoredict = [
@@ -466,6 +469,9 @@ let removecraftingid = [
 	'create:basin',
 	'create:empty_blaze_burner',
 	'create:depot',
+	'pneumaticcraft:pressure_chamber_wall',
+	'pneumaticcraft:pressure_chamber_glass',
+	'pneumaticcraft:pressure_chamber_interface',
   ]
   
   let removecraftingoredictsd = [
@@ -1701,3 +1707,21 @@ let platemts = [
 	'#forge:ingots/zinc',
 	'create:andesite_alloy'
 ]
+
+let casings = [
+	'kubejs:casing_ciron'
+]
+
+let casingsmts = [
+	'kubejs:plate_compressed_iron'
+]
+
+let removerecipeid = [
+	'tconstruct:smeltery/alloys/molten_enderium',
+	'tconstruct:smeltery/alloys/molten_signalum',
+	'tconstruct:smeltery/alloys/molten_lumium'
+]
+
+let removerecipeoredict = []
+
+let removerecipe = []
