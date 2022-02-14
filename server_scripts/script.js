@@ -329,6 +329,12 @@ let removecraftingid = [
 	'jaopca:storage_blocks.to_storage_block.wood',
 	'jaopca:storage_blocks.to_storage_block.platinum',
 	'pneumaticcraft:pressure_chamber_valve',
+	'pneumaticcraft:thermopneumatic_processing_plant',
+	'pneumaticcraft:refinery_output',
+	'pneumaticcraft:assembly_io_unit_import',
+	'pneumaticcraft:assembly_io_unit_export',
+	'pneumaticcraft:assembly_drill',
+	'pneumaticcraft:assembly_laser',
   ]
 
   //"sd" means "shaped"
@@ -474,6 +480,8 @@ let removecraftingid = [
 	'pneumaticcraft:pressure_chamber_interface',
 	'pneumaticcraft:refinery',
 	'pneumaticcraft:thermopuneumatic_processing_plant',
+	'pneumaticcraft:assembly_io_unit_import',
+	'pneumaticcraft:assembly_io_unit_export',
   ]
   
   let removecraftingoredictsd = [
@@ -526,6 +534,15 @@ let removecraftingid = [
 	'twilightforest:trans_planks',
 	'twilightforest:mine_planks',
 	'twilightforest:sort_planks',
+	'theabyss:blaru_planks',
+	'theabyss:jungle_planks',
+	'theabyss:ruma_planks',
+	'theabyss:roggen_planks',
+	'theabyss:tantra_planks',
+	'theabyss:bog_planks',
+	'theabyss:sal_planks',
+	'theabyss:slimed_planks',
+	'theabyss:frozen_planks',
   ]
   
   let logs = [
@@ -559,6 +576,15 @@ let removecraftingid = [
 	'twilightforest:stripped_transformation_log',
 	'twilightforest:stripped_mining_log',
 	'twilightforest:stripped_sorting_log',
+	'theabyss:stripped_blaru_log',
+	'theabyss:stipped_jungle_log',
+	'theabyss:stripped_ruma_log',
+	'theabyss:stripped_roggen_log',
+	'theabyss:stripped_tantra_log',
+	'theabyss:bog_shroom_log',
+	'theabyss:sal_shroom_log',
+	'theabyss:slimed_log',
+	'theabyss:frozen_log',
   ]
   
   let bookshelves = [
@@ -570,6 +596,9 @@ let removecraftingid = [
 	'blue_skies:dusk_bookshelf',
 	'blue_skies:maple_bookshelf',
 	'blue_skies:cherry_bookshelf',
+	'theabyss:blaru_bookshelf',
+	'theabyss:jungle_bookshelf',
+	'theabyss:ruma_bookshelf',
   ]
   
   let saws = [
@@ -585,8 +614,11 @@ let removecraftingid = [
 	'blue_skies:frostbright_planks',
 	'blue_skies:lunar_planks',
 	'blue_skies:dusk_planks',
-	'blue_skies:maple_bookshelf',
-	'blue_skies:cherry_bookshelf',
+	'blue_skies:maple_planks',
+	'blue_skies:cherry_planks',
+	'theabyss:blaru_planks',
+	'theabyss:jungle_planks',
+	'theabyss:ruma_planks',
   ]
   
   let slabs = [
@@ -1701,7 +1733,7 @@ let casingsmts = [
 let removerecipeid = [
 	'tconstruct:smeltery/alloys/molten_enderium',
 	'tconstruct:smeltery/alloys/molten_signalum',
-	'tconstruct:smeltery/alloys/molten_lumium'
+	'tconstruct:smeltery/alloys/molten_lumium',
 ]
 
 let removerecipeoredict = []
@@ -1716,6 +1748,14 @@ let removerecipe = [
 	'theabyss:sal_planks',
 	'theabyss:slimed_planks',
 	'theabyss:frozen_planks',
+	'theabyss:blaru_bookshelf',
+	'theabyss:jungle_bookshelf',
+	'theabyss:ruma_bookshelf',
+]
+
+let removemirror = [
+	'pneumaticcraft:assembly_io_unit_import',
+	'pneumaticcraft:assembly_io_unit_export',
 ]
 
 let unify = [
@@ -1806,4 +1846,28 @@ let unifymts = [
 	'immersiveengineering:ingot_steel',
 	'mekanism:ingot_tin',
 	'mekanism:ingot_bronze',
+]
+
+let lingots = [
+	'kubejs:red_ingot',
+	'kubejs:blue_ingot',
+	'kubejs:white_ingot',
+	'kubejs:black_ingot',
+	'kubejs:yellow_ingot',
+]
+
+let lingotmts = [
+	'#forge:dusts/redstone',
+	'#forge:gems/lapis',
+	'#forge:gems/quartz',
+	'#minecraft:coals',
+	'#forge:dusts/glowstone'
+]
+
+let lingotbasemts = [
+	'#forge:ingots/copper',
+	'#forge:ingots/platinum',
+	'#forge:ingots/iron',
+	'#forge:ingots/netherite',
+	'#forge:ingots/gold',
 ]

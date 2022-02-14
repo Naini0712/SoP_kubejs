@@ -41,6 +41,14 @@ onEvent('recipes', event => {
 
 
 
+//Remove IO Unit
+onEvent('recipes', event => {
+  for(let i = 0; i < removemirror.length; i++)
+  event.remove({output: removemirror[i], type: 'pneumaticcraft:crafting_shaped_no_mirror'})
+})
+
+
+
 //Add recipes stripped log->wood with chisel
 onEvent('recipes', event => {
   for(let i = 0; i < planks.length; i++)
@@ -176,6 +184,16 @@ event.shaped(casings[i],
 
 
 
+//Ludicrous Ingots(affected by PO3)
+onEvent('recipes', event => {
+  for(let i = 0; i < lingots.length; i++)
+  event.shaped(lingots[i],
+  ['RRR','RIR','RRR'], {
+    R: lingotmts[i],
+    I: lingotbasemts[i]
+  })
+})
+
 //Create
 onEvent('recipes', event => {
 //Shaft
@@ -288,6 +306,14 @@ event.shaped('create:chute',
     A: 'kubejs:plate_andesite_alloy',
     I: '#forge:plates/iron'
   })
+//Advanced Precision Mechanism
+event.recipes.createSequencedAssembly('kubejs:precision_mechanism_advanced', '#forge:plates/steel', [
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['create:incomplete_large_cogwheel', 'create:cogwheel']),
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['create:incomplete_large_cogwheel', 'create:large_cogwheel']),
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['create:incomplete_large_cogwheel', 'pneumaticcraft:compressed_iron_gear']),
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['create:incomplete_large_cogwheel', 'kubejs:red_ingot']),
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['create:incomplete_large_cogwheel', 'thermal:enderium_nugget']),
+  ]).transitionalItem('kubejs:precision_mechanism_advanced_icp').loops(9)
 })
 
 
@@ -340,5 +366,49 @@ onEvent('recipes', event => {
     S: 'pneumaticcraft:reinforced_stone_slab',
     P: 'create:precision_mechanism',
     L: 'kubejs:plate_compressed_iron'
+  }),
+  //Refinery Output
+  event.shaped('pneumaticcraft:refinery_output',
+  ['SSS','GLG','SSS'], {
+    G: 'mekanism:structural_glass',
+    S: 'pneumaticcraft:reinforced_stone_slab',
+    L: 'minecraft:iron_bars'
+  }),
+  //Assembly IO Unit(import)
+  event.shaped('pneumaticcraft:assembly_io_unit_import',
+  ['HCC',' PC','SBS'], {
+    H: 'minecraft:hopper',
+    C: 'pneumaticcraft:pneumatic_cylinder',
+    P: 'kubejs:precision_mechanism_advanced',
+    S: 'kubejs:plate_compressed_iron',
+    B: 'pneumaticcraft:printed_circuit_board'
+
+  }),
+  //Assembly IO Unit(export)
+  event.shaped('pneumaticcraft:assembly_io_unit_export',
+  ['HCC','CP ','SBS'], {
+    H: 'minecraft:hopper',
+    C: 'pneumaticcraft:pneumatic_cylinder',
+    P: 'kubejs:precision_mechanism_advanced',
+    S: 'kubejs:plate_compressed_iron',
+    B: 'pneumaticcraft:printed_circuit_board'
+  }),
+  //Assembly Drill
+  event.shaped('pneumaticcraft:assembly_drill',
+  ['HCC',' PC','SBS'], {
+    H: 'minecraft:diamond',
+    C: 'pneumaticcraft:pneumatic_cylinder',
+    P: 'kubejs:precision_mechanism_advanced',
+    S: 'kubejs:plate_compressed_iron',
+    B: 'pneumaticcraft:printed_circuit_board'
+  }),
+  //Assembly Laser
+  event.shaped('pneumaticcraft:assembly_laser',
+  ['HCC',' PC','SBS'], {
+    H: '#forge:glass/red',
+    C: 'pneumaticcraft:pneumatic_cylinder',
+    P: 'kubejs:precision_mechanism_advanced',
+    S: 'kubejs:plate_compressed_iron',
+    B: 'pneumaticcraft:printed_circuit_board'
   })
 })

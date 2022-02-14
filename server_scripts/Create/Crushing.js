@@ -26,6 +26,6 @@ onEvent('recipes', event => {
         Item.of('exnihilosequentia:piece_tin').withChance(0.05).toResultJson(),
         Item.of('exnihilosequentia:piece_zinc').withChance(0.05).toResultJson(),
         ],
-        processingTime: 4000
+        processingTime: 8000
       })
   })
