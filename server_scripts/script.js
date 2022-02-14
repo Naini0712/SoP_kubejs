@@ -127,7 +127,10 @@ let removecraftingid = [
 	 'jaopca:immersiveengineering.material_to_plate_hammer.invar',
 	 'jaopca:immersiveengineering.material_to_plate_hammer.signalum',
 	 'jaopca:immersiveengineering.material_to_plate_hammer.lumium',
-	 'jaopca:immersiveengineering.material_to_plate_hammer.enderium'
+	 'jaopca:immersiveengineering.material_to_plate_hammer.enderium',
+	 'thermal:fire_charge/signalum_ingot_4',
+	 'thermal:fire_charge/lumium_ingot_4',
+	 'thermal:fire_charge/enderium_ingot_2',
   ]
   
   let removecrafting = [
@@ -217,6 +220,7 @@ let removecraftingid = [
 	 'thermal:signalum_dust',
 	 'thermal:lumium_dust',
 	 'thermal:enderium_dust',
+	 'pneumaticcraft:pressure_chamber_interface'
   ]
   
   let removecraftingoredict = [
@@ -324,15 +328,13 @@ let removecraftingid = [
 	'jaopca:storage_blocks.to_storage_block.saltpeter',
 	'jaopca:storage_blocks.to_storage_block.wood',
 	'jaopca:storage_blocks.to_storage_block.platinum',
+	'pneumaticcraft:pressure_chamber_valve',
   ]
 
   //"sd" means "shaped"
   let removecraftingsd = [
 	//remove a recipe of bookshelf
-	'theabyss:book_shelf_oak_wood_rcp',
 	//Remove recipes of log->planks
-	'theabyss:abyssoakwood',
-	'theabyss:shroom_oak_planks_gr',
 	//remove recipes of slabs which don't have ore dictionaly(mainly IE)
 	'appliedenergistics2:sky_stone_slab',
 	'appliedenergistics2:smooth_sky_stone_slab',
@@ -420,7 +422,6 @@ let removecraftingid = [
 	'tconstruct:scorched_bricks_slab',
 	'tconstruct:scorched_road_slab',
 	'outer_end:violite_slab',
-	'theabyss:shroom_oak_slab_gr',
 	//remove recipes of stairs which don't have ore dictionaly(mainly IE)
 	'appliedenergistics2:sky_stone_stairs',
 	'appliedenergistics2:smooth_sky_stone_stairs',
@@ -458,7 +459,6 @@ let removecraftingid = [
 	'tconstruct:scorched_bricks_stairs',
 	'tconstruct:scorched_road_stairs',
 	'outer_end:azure_stairs',
-	'theabyss:shroom_oak_stair_gr',
 	'create:shaft',
 	'create:cogwheel',
 	'create:large_cogwheel',
@@ -472,6 +472,8 @@ let removecraftingid = [
 	'pneumaticcraft:pressure_chamber_wall',
 	'pneumaticcraft:pressure_chamber_glass',
 	'pneumaticcraft:pressure_chamber_interface',
+	'pneumaticcraft:refinery',
+	'pneumaticcraft:thermopuneumatic_processing_plant',
   ]
   
   let removecraftingoredictsd = [
@@ -524,9 +526,6 @@ let removecraftingid = [
 	'twilightforest:trans_planks',
 	'twilightforest:mine_planks',
 	'twilightforest:sort_planks',
-	'theabyss:abyssoakwood',
-	'theabyss:shroom_oak_planks_gr',
-	'theabyss:shroom_oak_planks_gr'
   ]
   
   let logs = [
@@ -560,9 +559,6 @@ let removecraftingid = [
 	'twilightforest:stripped_transformation_log',
 	'twilightforest:stripped_mining_log',
 	'twilightforest:stripped_sorting_log',
-	'theabyss:abyssoak',
-	'theabyss:shroom_stem_3',
-	'theabyss:shroom_stem_4'
   ]
   
   let bookshelves = [
@@ -574,7 +570,6 @@ let removecraftingid = [
 	'blue_skies:dusk_bookshelf',
 	'blue_skies:maple_bookshelf',
 	'blue_skies:cherry_bookshelf',
-	'theabyss:book_shelf_oak_wood'
   ]
   
   let saws = [
@@ -592,7 +587,6 @@ let removecraftingid = [
 	'blue_skies:dusk_planks',
 	'blue_skies:maple_bookshelf',
 	'blue_skies:cherry_bookshelf',
-	'theabyss:abyssoakwood'
   ]
   
   let slabs = [
@@ -631,8 +625,6 @@ let removecraftingid = [
 	'twilightforest:trans_slab',
 	'twilightforest:mine_slab',
 	'twilightforest:sort_slab',
-	'theabyss:abyssoakslab',
-	'theabyss:shroom_oak_slab_gr',
 	'immersiveengineering:slab_treated_wood_horizontal',
 	'immersiveengineering:slab_treated_wood_vertical',
 	'immersiveengineering:slab_treated_wood_packaged'
@@ -663,8 +655,6 @@ let removecraftingid = [
 	'botania:dreamwood_planks',
 	'botania:shimmerwood_planks',
 	'outer_end:azure_planks',
-	'theabyss:abyssoakwood',
-	'theabyss:shroom_oak_planks_gr',
 	'tconstruct:greenheart_planks',
 	'tconstruct:skyroot_planks',
 	'tconstruct:bloodshroom_planks',
@@ -706,8 +696,6 @@ let removecraftingid = [
 	'botania:dreamwood_planks_stairs',
 	'botania:shimmerwood_planks_stairs',
 	'outer_end:azure_stairs',
-	'theabyss:abyssoakstair',
-	'theabyss:shroom_oak_stair_gr',
 	'tconstruct:greenheart_planks_stairs',
 	'tconstruct:skyroot_planks_stairs',
 	'tconstruct:bloodshroom_planks_stairs',
@@ -749,8 +737,6 @@ let removecraftingid = [
 	'botania:dreamwood_planks',
 	'botania:shimmerwood_planks',
 	'outer_end:azure_planks',
-	'theabyss:abyssoakwood',
-	'theabyss:shroom_oak_planks_gr',
 	'tconstruct:greenheart_planks',
 	'tconstruct:skyroot_planks',
 	'tconstruct:bloodshroom_planks',
@@ -813,8 +799,6 @@ let removecraftingid = [
 	'twilightforest:trans_slab',
 	'twilightforest:mine_slab',
 	'twilightforest:sort_slab',
-	'theabyss:abyssoakslab',
-	'theabyss:shroom_oak_slab_gr',
 	'immersiveengineering:slab_treated_wood_horizontal',
 	'immersiveengineering:slab_treated_wood_vertical',
 	'immersiveengineering:slab_treated_wood_packaged',
@@ -898,8 +882,6 @@ let removecraftingid = [
 	'botania:dreamwood_planks',
 	'botania:shimmerwood_planks',
 	'outer_end:azure_planks',
-	'theabyss:abyssoakwood',
-	'theabyss:shroom_oak_planks_gr',
 	'tconstruct:greenheart_planks',
 	'tconstruct:skyroot_planks',
 	'tconstruct:bloodshroom_planks',
@@ -994,8 +976,6 @@ let removecraftingid = [
 	'botania:dreamwood_planks_stairs',
 	'botania:shimmerwood_planks_stairs',
 	'outer_end:azure_stairs',
-	'theabyss:abyssoakstair',
-	'theabyss:shroom_oak_stair_gr',
 	'tconstruct:greenheart_planks_stairs',
 	'tconstruct:skyroot_planks_stairs',
 	'tconstruct:bloodshroom_planks_stairs',
@@ -1047,8 +1027,6 @@ let removecraftingid = [
 	'botania:dreamwood_planks',
 	'botania:shimmerwood_planks',
 	'outer_end:azure_planks',
-	'theabyss:abyssoakwood',
-	'theabyss:shroom_oak_planks_gr',
 	'tconstruct:greenheart_planks',
 	'tconstruct:skyroot_planks',
 	'tconstruct:bloodshroom_planks',
@@ -1163,7 +1141,8 @@ let removecraftingid = [
 	'twilightforest:steeleaf_block',
 	'twilightforest:fiery_block',
 	'twilightforest:knightmetal_block',
-	'twilightforest:carminite_block'
+	'twilightforest:carminite_block',
+	'#forge:storage_blocks/bronze',
   ]
   
   let materialsbticu = [
@@ -1182,12 +1161,12 @@ let removecraftingid = [
 	'botania:manasteel_ingot',
 	'botania:terrasteel_ingot',
 	'botania:elementium_ingot',
-	'thermal:copper_ingot',
+	'tconstruct:copper_ingot',
 	'create:zinc_ingot',
 	'create:brass_ingot',
 	'draconicevolution:draconium_block',
 	'draconicevolution:awakened_draconium_block',
-	'thermal:silver_ingot',
+	'immersiveengineering:ingot_silver',
 	'iceandfire:sapphire_gem',
 	'iceandfire:amythest_gem',
 	'iceandfire:dragonscales_red',
@@ -1206,12 +1185,12 @@ let removecraftingid = [
 	'iceandfire:dragonsteel_ice_ingot',
 	'iceandfire:dragonsteel_lightning_ingot',
 	'immersiveengineering:ingot_aluminum',
-	'thermal:lead_ingot',
-	'thermal:nickel_ingot',
-	'mekanism:ingot_uranium',
-	'thermal:constantan_ingot',
-	'thermal:electrum_ingot',
-	'mekanism:ingot_steel',
+	'immersiveengineering:ingot_lead',
+	'immersiveengineering:ingot_nickel',
+	'immersiveengineering:ingot_uranium',
+	'immersiveengineering:ingot_constantan',
+	'immersiveengineering:ingot_electrum',
+	'immersiveengineering:ingot_steel',
 	'astralsorcery:aquamarine',
 	'minecraft:brick',
 	'botania:dragonstone',
@@ -1254,7 +1233,8 @@ let removecraftingid = [
 	'twilightforest:steeleaf_ingot',
 	'twilightforest:fiery_ingot',
 	'twilightforest:knightmetal_ingot',
-	'twilightforest:carminite'
+	'twilightforest:carminite',
+	'mekanism:ingot_bronze'
   ]
 	
   let ingot = [
@@ -1268,26 +1248,26 @@ let removecraftingid = [
     'botania:manasteel_ingot',
     'botania:terrasteel_ingot',
     'botania:elementium_ingot',
-    'thermal:copper_ingot',
+    'tconstruct:copper_ingot',
     'create:zinc_ingot',
     'create:brass_ingot',
     'draconicevolution:draconium_ingot',
     'draconicevolution:awakened_draconium_ingot',
-    'thermal:silver_ingot',
+    'immersiveengineering:ingot_silver',
     'immersiveengineering:ingot_aluminum',
-    'thermal:lead_ingot',
-    'thermal:nickel_ingot',
-    'mekanism:ingot_uranium',
-    'thermal:constantan_ingot',
-    'thermal:electrum_ingot',
-    'mekanism:ingot_steel',
+    'immersiveengineering:ingot_lead',
+    'immersiveengineering:ingot_nickel',
+    'immersiveengineering:ingot_uranium',
+    'immersiveengineering:ingot_constantan',
+    'immersiveengineering:ingot_electrum',
+    'immersiveengineering:ingot_steel',
     'twilightforest:ironwood_ingot',
     'twilightforest:knightmetal_ingot',
     'mekanism:ingot_refined_obsidian',
-    'thermal:bronze_ingot',
+    'mekanism:ingot_bronze',
     'mekanism:ingot_refined_glowstone',
     'mekanism:ingot_osmium',
-    'thermal:tin_ingot',
+    'mekanism:ingot_tin',
     'boss_tools:desh_ingot',
     'boss_tools:silicon_ingot',
     'thermal:invar_ingot',
@@ -1374,12 +1354,12 @@ let block = [
     'botania:manasteel_block',
     'botania:terrasteel_block',
     'botania:elementium_block',
-    'thermal:copper_block',
+    'tconstruct:copper_block',
     'create:zinc_block',
     'create:brass_block',
     'draconicevolution:draconium_block',
     'draconicevolution:awakened_draconium_block',
-    'thermal:silver_block',
+    'immersiveengineering:storage_silver',
     'iceandfire:sapphire_block',
     'iceandfire:amythest_block',
     'iceandfire:dragonscale_red',
@@ -1398,11 +1378,11 @@ let block = [
     'iceandfire:dragonsteel_ice_block',
     'iceandfire:dragonsteel_lightning_block',
     'immersiveengineering:storage_aluminum',
-    'thermal:lead_block',
-    'thermal:nickel_block',
-    'mekanism:block_uranium',
-    'thermal:constantan_block',
-    'thermal:electrum_block',
+    'immersiveengineering:storage_lead',
+    'immersiveengineering:storage_nickel',
+    'immersiveengineering:storage_uranium',
+    'immersiveengineering:storage_constantan',
+    'immersiveengineering:storage_electrum',
     'immersiveengineering:storage_steel',
     'immersiveengineering:coke',
     'jaopca:storage_blocks.aquamarine',
@@ -1426,7 +1406,7 @@ let block = [
     'jaopca:storage_blocks.wood',//
     'jaopca:storage_blocks.platinum',
     'mekanism:block_osmium',
-    'thermal:tin_block',
+    'mekanism:block_tin',
     'mekanism:block_refined_obsidian',
     'thermal:charcoal_block',
     'mekanism:block_refined_glowstone',
@@ -1459,7 +1439,8 @@ let block = [
     'twilightforest:steeleaf_block',
     'twilightforest:fiery_block',
     'twilightforest:knightmetal_block',
-    'twilightforest:carminite_block'
+    'twilightforest:carminite_block',
+	'mekanism:block_bronze'
 ]
 
 let materialtoblock = [
@@ -1568,7 +1549,8 @@ let materialtoblock = [
     'twilightforest:steeleaf_ingot',
     'twilightforest:fiery_ingot',
     'twilightforest:knightmetal_ingot',
-    'twilightforest:carminite'
+    'twilightforest:carminite',
+	'#forge:ingots/bronze'
 ]
 
 let block8 = [
@@ -1661,18 +1643,18 @@ let removesieve = [
 ]
 
 let plates = [
-	'thermal:iron_plate',
-	'thermal:gold_plate',
+	'immersiveengineering:plate_iron',
+	'immersiveengineering:plate_gold',
 	'thermal:netherite_plate',
-	'thermal:copper_plate',
+	'create:copper_sheet',
 	'thermal:tin_plate',
-	'thermal:lead_plate',
-	'thermal:silver_plate',
-	'thermal:nickel_plate',
+	'immersiveengineering:plate_lead',
+	'immersiveengineering:plate_silver',
+	'immersiveengineering:plate_nickel',
 	'thermal:bronze_plate',
-	'thermal:electrum_plate',
+	'immersiveengineering:plate_electrum',
 	'thermal:invar_plate',
-	'thermal:constantan_plate',
+	'immersiveengineering:plate_constantan',
 	'thermal:signalum_plate',
 	'thermal:lumium_plate',
 	'thermal:enderium_plate',
@@ -1724,4 +1706,104 @@ let removerecipeid = [
 
 let removerecipeoredict = []
 
-let removerecipe = []
+let removerecipe = [
+	'theabyss:blaru_planks',
+	'theabyss:jungle_planks',
+	'theabyss:ruma_planks',
+	'theabyss:roggen_planks',
+	'theabyss:tantra_planks',
+	'theabyss:bog_planks',
+	'theabyss:sal_planks',
+	'theabyss:slimed_planks',
+	'theabyss:frozen_planks',
+]
+
+let unify = [
+	//plates
+	'#forge:plates/iron',
+	'#forge:plates/gold',
+	'#forge:plates/copper',
+	'#forge:plates/lead',
+	'#forge:plates/silver',
+	'#forge:plates/nickel',
+	'#forge:plates/electrum',
+	'#forge:plates/constantan',
+	//nuggets
+	'#forge:nuggets/copper',
+	'#forge:nuggets/silver',
+	'#forge:nuggets/lead',
+	'#forge:nuggets/nickel',
+	'#forge:nuggets/uranium',
+	'#forge:nuggets/constatan',
+	'#forge:nuggets/electrum',
+	'#forge:nuggets/steel',
+	'#forge:nuggets/tin',
+	'#forge:nuggets/bronze',
+	//blocks
+	'#forge:storage_blocks/copper',
+	'#forge:storage_blocks/silver',
+	'#forge:storage_blocks/lead',
+	'#forge:storage_blocks/nickel',
+	'#forge:storage_blocks/uranium',
+	'#forge:storage_blocks/constantan',
+	'#forge:storage_blocks/electrum',
+	'#forge:storage_blocks/steel',
+	'#forge:storage_blocks/tin',
+	'#forge:storage_blocks/bronze',
+	//ingots
+	'#forge:ingots/copper',
+	'#forge:ingots/silver',
+	'#forge:ingots/lead',
+	'#forge:ingots/nickel',
+	'#forge:ingots/uranium',
+	'#forge:ingots/constatan',
+	'#forge:ingots/electrum',
+	'#forge:ingots/steel',
+	'#forge:ingots/tin',
+	'#forge:ingots/bronze',
+]
+
+let unifymts = [
+	//plates
+	'immersiveengineering:plate_iron',
+	'immersiveengineering:plate_gold',
+	'create:copper_sheet',
+	'immersiveengineering:plate_lead',
+	'immersiveengineering:plate_silver',
+	'immersiveengineering:plate_nickel',
+	'immersiveengineering:plate_electrum',
+	'immersiveengineering:plate_constantan',
+	//nuggets
+	'tconstruct:copper_nugget',
+	'immersiveengineering:nugget_silver',
+	'immersiveengineering:nugget_lead',
+	'immersiveengineering:nugget_nickel',
+	'immersiveengineering:nugget_uranium',
+	'immersiveengineering:nugget_constantan',
+	'immersiveengineering:nugget_electrum',
+	'immersiveengineering:nugget_steel',
+	'mekanism:nugget_tin',
+	'mekanism:nugget_bronze',
+	//blocks
+	'tconstruct:copper_block',
+	'immersiveengineering:storage_silver',
+	'immersiveengineering:storage_lead',
+	'immersiveengineering:storage_nickel',
+	'immersiveengineering:storage_uranium',
+	'immersiveengineering:storage_constantan',
+	'immersiveengineering:storage_electrum',
+	'immersiveengineering:storage_steel',
+	'mekanism:block_tin',
+	'mekanism:block_bronze',
+	//ingots
+	'tconstruct:copper_ingot', 
+	'immersiveengineering:ingot_silver',
+	'immersiveengineering:ingot_lead',
+	'immersiveengineering:ingot_nickel',
+	'immersiveengineering:ingot_uranium',
+	'immersiveengineering:ingot_constantan',
+	'immersiveengineering:ingot_electrum',
+	'immersiveengineering:ingot_steel',
+	'mekanism:ingot_tin',
+	'mekanism:ingot_bronze',
+]

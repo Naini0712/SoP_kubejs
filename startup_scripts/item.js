@@ -27,5 +27,8 @@ onEvent('item.registry', event => {
     //Plates
     event.create('plate_andesite_alloy').displayName('Andesite Alloy Plate'),
     event.create('plate_zinc').displayName('Zinc Plate'),
-    event.create('plate_compressed_iron').displayName('Compressed Iron Plate')
-  })
+    event.create('plate_compressed_iron').displayName('Compressed Iron Plate'),
+    //Advanced Precision Mechanism
+    event.create('precision_mechanism_advanced_icp').displayName('Incomplete Advanced Precision Mechanism')
+    event.create('precision_mechanism_advanced').displayName('Advanced Precision Mechanism')
+  }) 

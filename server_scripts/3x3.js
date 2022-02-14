@@ -244,9 +244,9 @@ onEvent('recipes', event => {
   event.replaceInput({type: 'minecraft:crafting_shaped'}, 'create:andesite_casing', 'kubejs:hull_andesite')
   event.replaceInput({type: 'minecraft:crafting_shaped'}, 'create:brass_casing', 'kubejs:hull_brass')
 //Mechanical Press
-event.shaped('kubejs:hull_brass',
-  [' S ','WAW',' Z '], {
-    C: 'create:brass_casing',
+event.shaped('create:mechanical_press',
+  [' C ','WAW',' Z '], {
+    C: 'create:andesite_alloy',
     W: 'create:cogwheel',
     A: 'kubejs:hull_andesite',
     Z: '#forge:storage_blocks/zinc'
@@ -310,18 +310,35 @@ onEvent('recipes', event => {
   ['NRN','RCR','NRN'], {
     N: '#forge:plates/netherite',
     R: 'pneumaticcraft:reinforced_bricks',
-    C: '#forge:storage_blocks/compressed_iron'
+    C: 'kubejs:casing_ciron'
   }),
   //Pressure Chamber Interface
-  event.shapeless('8x pneumaticcraft:pressure_chamber_wall',
-  ['pneumaticcraft:pressure_chamber_wall','kubejs:hull_ciron'], 
-  )
+  event.shapeless('pneumaticcraft:pressure_chamber_interface',
+  ['pneumaticcraft:pressure_chamber_wall','kubejs:hull_ciron','minecraft:hopper'], 
+  ),
   //Compressed Iron Machine Hull
   event.shaped('kubejs:hull_ciron',
-  ['SRS','PCP','SRS'], {
+  ['PSP','SCS','RSR'], {
     C: 'kubejs:casing_ciron',
     R: 'immersiveengineering:wirecoil_steel',
     P: 'create:precision_mechanism',
-    S: '#forge:plates/signalum'
+    S: '#forge:plates/invar'
+  }),
+  //Refinery Controller
+  event.shaped('pneumaticcraft:refinery',
+  ['SSS','THG','SSS'], {
+    H: 'kubejs:hull_ciron',
+    T: 'pneumaticcraft:small_tank',
+    S: 'pneumaticcraft:reinforced_stone_slab',
+    G: 'pneumaticcraft:compressed_iron_gear'
+  }),
+  //Thermopneumatic Processing Unit
+  event.shaped('pneumaticcraft:thermopneumatic_processing_plant',
+  ['ASA','PLP','TST'], {
+    A: 'pneumaticcraft:small_tank',
+    T: 'pneumaticcraft:pressure_tube',
+    S: 'pneumaticcraft:reinforced_stone_slab',
+    P: 'create:precision_mechanism',
+    L: 'kubejs:plate_compressed_iron'
   })
 })
