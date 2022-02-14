@@ -1,7 +1,7 @@
 onEvent('item.registry', event => {
     //Sheets
     event.create('sheet_aluminum').displayName('Aluminum Sheet'),
-    event.create('sheet_copper').displayName('Copper Sheet'),
+    event.create('sheet_aluminum_icp').type('create:sequenced_assembly').displayName('Incomplete Aluminum Sheet')
     //Isotopes of Einsteinium
     event.create('einsteinium_252').displayName('Einsteinium-252'),
     event.create('einsteinium_254').displayName('Einsteinium-254'),

@@ -145,82 +145,82 @@ let removecraftingid = [
 	'twilightforest:mine_planks',
 	'twilightforest:sort_planks',
 	//remove all fucking nugget recipes
-	 'minecraft:gold_nugget',
-	 'minecraft:iron_nugget',
-	 'botania:manasteel_nugget',
-	 'botania:terrasteel_nugget',
-	 'botania:elementium_nugget',
-	 'create:copper_nugget',
-	 'create:zinc_nugget',
-	 'create:brass_nugget',
-	 'draconicevolution:draconium_nugget',
-	 'draconicevolution:awakened_draconium_nugget',
-	 'extendedcrafting:black_iron_nugget',
-	 'extendedcrafting:redstone_nugget',
-	 'extendedcrafting:ender_nugget',
-	 'extndedcrafting:enhanced_ender_nugget',
-	 'extendedcrafting:crystaltine_nugget',
-	 'extendedcrafting:the_ultimate_nugget',
-	 'iceandfire:silver_nugget',
-	 'iceandfire:copper_nugget',
-	 'immersiveengineering:nugget_copper',
-	 'immersiveengineering:nugget_aluminum',
-	 'immersiveengineering:nugget_lead',
-	 'immersiveengineering:nugget_silver',
-	 'immersiveengineering:nugget_nickel',
-	 'immersiveengineering:nugget_uranium',
-	 'immersiveengineering:nugget_constantan',
-	 'immersiveengineering:nugget_electrum',
-	 'immersiveengineering:nugget_steel',
-	 'jaopca:nuggets.ironwood',
-	 'jaopca:nuggets.knightmetal',
-	 'mysticalagradditions:insanium_nugget',
-	 'mysticalagriculture:prosperity_nugget',
-	 'mysticalagriculture:inferium_nugget',
-	 'mysticalagriculture:prudentium_nugget',
-	 'mysticalagriculture:tertium_nugget',
-	 'mysticalagriculture:imperium_nugget',
-	 'mysticalagriculture:supremium_nugget',
-	 'mysticalagriculture:soulium_nugget',
-	 'boss_tools:steel_nugget',
-	 'boss_tools:desh_nugget',
-	 'boss_tools:silicon_nugget',
-	 'thermal:copper_nugget',
-	 'thermal:tin_nugget',
-	 'thermal:lead_nugget',
-	 'thermal:silver_nugget',
-	 'thermal:nickel_nugget',
-	 'thermal:bronze_nugget',
-	 'thermal:electrum_nugget',
-	 'thermal:invar_nugget',
-	 'thermal:constantan_nugget',
-	 'thermal:signalum_nugget',
-	 'thermal:lumium_nugget',
-	 'thermal:enderium_nugget',
-	 'tconstruct:copper_nugget',
-	 'tconstruct:cobalt_nugget',
-	 'tconstruct:slimesteel_nugget',
-	 'tconstruct:tinkers_bronze_nugget',
-	 'tconstruct:rose_gold_nugget',
-	 'tconstruct:pig_iron_nugget',
-	 'tconstruct:queens_slime_nugget',
-	 'tconstruct:manyullyn_nugget',
-	 'tconstruct:hepatizon_nugeet',
-	 'tconstruct:netherite_nugget',
-	 'translocators:diamond_nugget',
-	 'mekanism:nugget_refined_obsidian',
-	 'mekanism:nugget_bronze',
-	 'mekanism:nugget_refined_glowstone',
-	 'mekanism:nugget_steel',
-	 'mekanism:nugget_osmium',
-	 'mekanism:nugget_copper',
-	 'mekanism:nugget_tin',
-	 'mekanism:nugget_lead',
-	 'mekanism:nugget_uranium',
-	 'thermal:signalum_dust',
-	 'thermal:lumium_dust',
-	 'thermal:enderium_dust',
-	 'pneumaticcraft:pressure_chamber_interface'
+	'minecraft:gold_nugget',
+	'minecraft:iron_nugget',
+	'botania:manasteel_nugget',
+	'botania:terrasteel_nugget',
+	'botania:elementium_nugget',
+	'create:copper_nugget',
+	'create:zinc_nugget',
+	'create:brass_nugget',
+	'draconicevolution:draconium_nugget',
+	'draconicevolution:awakened_draconium_nugget',
+	'extendedcrafting:black_iron_nugget',
+	'extendedcrafting:redstone_nugget',
+	'extendedcrafting:ender_nugget',
+	'extndedcrafting:enhanced_ender_nugget',
+	'extendedcrafting:crystaltine_nugget',
+	'extendedcrafting:the_ultimate_nugget',
+	'iceandfire:silver_nugget',
+	'iceandfire:copper_nugget',
+	'immersiveengineering:nugget_copper',
+	'immersiveengineering:nugget_aluminum',
+	'immersiveengineering:nugget_lead',
+	'immersiveengineering:nugget_silver',
+	'immersiveengineering:nugget_nickel',
+	'immersiveengineering:nugget_uranium',
+	'immersiveengineering:nugget_constantan',
+	'immersiveengineering:nugget_electrum',
+	'immersiveengineering:nugget_steel',
+	'jaopca:nuggets.ironwood',
+	'jaopca:nuggets.knightmetal',
+	'mysticalagradditions:insanium_nugget',
+	'mysticalagriculture:prosperity_nugget',
+	'mysticalagriculture:inferium_nugget',
+	'mysticalagriculture:prudentium_nugget',
+	'mysticalagriculture:tertium_nugget',
+	'mysticalagriculture:imperium_nugget',
+	'mysticalagriculture:supremium_nugget',
+	'mysticalagriculture:soulium_nugget',
+	'boss_tools:steel_nugget',
+	'boss_tools:desh_nugget',
+	'boss_tools:silicon_nugget',
+	'thermal:copper_nugget',
+	'thermal:tin_nugget',
+	'thermal:lead_nugget',
+	'thermal:silver_nugget',
+	'thermal:nickel_nugget',
+	'thermal:bronze_nugget',
+	'thermal:electrum_nugget',
+	'thermal:invar_nugget',
+	'thermal:constantan_nugget',
+	'thermal:signalum_nugget',
+	'thermal:lumium_nugget',
+	'thermal:enderium_nugget',
+	'tconstruct:copper_nugget',
+	'tconstruct:cobalt_nugget',
+	'tconstruct:slimesteel_nugget',
+	'tconstruct:tinkers_bronze_nugget',
+	'tconstruct:rose_gold_nugget',
+	'tconstruct:pig_iron_nugget',
+	'tconstruct:queens_slime_nugget',
+	'tconstruct:manyullyn_nugget',
+	'tconstruct:hepatizon_nugeet',
+	'tconstruct:netherite_nugget',
+	'translocators:diamond_nugget',
+	'mekanism:nugget_refined_obsidian',
+	'mekanism:nugget_bronze',
+	'mekanism:nugget_refined_glowstone',
+	'mekanism:nugget_steel',
+	'mekanism:nugget_osmium',
+	'mekanism:nugget_copper',
+	'mekanism:nugget_tin',
+	'mekanism:nugget_lead',
+	'mekanism:nugget_uranium',
+	'thermal:signalum_dust',
+	'thermal:lumium_dust',
+	'thermal:enderium_dust',
+	'pneumaticcraft:pressure_chamber_interface',
   ]
   
   let removecraftingoredict = [
@@ -482,6 +482,15 @@ let removecraftingid = [
 	'pneumaticcraft:thermopuneumatic_processing_plant',
 	'pneumaticcraft:assembly_io_unit_import',
 	'pneumaticcraft:assembly_io_unit_export',
+	'immersiveengineering:rs_engineering',
+	'immersiveengineering:heavy_engineering',
+	'immersiveengineering:light_engineering',
+	'immersiveengineering:dynamo',
+	'immersiveengineering:capacitor_lv',
+	'immersiveengineering:capacitor_mv',
+	'immersiveengineering:capacitor_hv',
+	'immersiveengineering:thermoelectric_generator',
+	'immersiveengineering:cloche'
   ]
   
   let removecraftingoredictsd = [
@@ -1175,6 +1184,11 @@ let removecraftingid = [
 	'twilightforest:knightmetal_block',
 	'twilightforest:carminite_block',
 	'#forge:storage_blocks/bronze',
+	'kubejs:block_red',
+	'kubejs:block_blue',
+	'kubejs:block_yellow',
+	'kubejs:block_white',
+	'kubejs:block_black',
   ]
   
   let materialsbticu = [
@@ -1266,7 +1280,12 @@ let removecraftingid = [
 	'twilightforest:fiery_ingot',
 	'twilightforest:knightmetal_ingot',
 	'twilightforest:carminite',
-	'mekanism:ingot_bronze'
+	'mekanism:ingot_bronze',
+	'kubejs:red_ingot',
+	'kubejs:blue_ingot',
+	'kubejs:yellow_ingot',
+	'kubejs:white_ingot',
+	'kubejs:black_ingot',
   ]
 	
   let ingot = [
@@ -1362,7 +1381,7 @@ let nuggets = [
     '#forge:nuggets/queens_slime',
     '#forge:nuggets/manyullyn',
     '#forge:nuggets/hepatizon',
-    'tconstruct:netherite_nugget'
+    'tconstruct:netherite_nugget',
 ]
 
 let block = [
@@ -1472,7 +1491,12 @@ let block = [
     'twilightforest:fiery_block',
     'twilightforest:knightmetal_block',
     'twilightforest:carminite_block',
-	'mekanism:block_bronze'
+	'mekanism:block_bronze',
+	'kubejs:block_red',
+	'kubejs:block_blue',
+	'kubejs:block_yellow',
+	'kubejs:block_white',
+	'kubejs:block_black',
 ]
 
 let materialtoblock = [
@@ -1582,7 +1606,12 @@ let materialtoblock = [
     'twilightforest:fiery_ingot',
     'twilightforest:knightmetal_ingot',
     'twilightforest:carminite',
-	'#forge:ingots/bronze'
+	'#forge:ingots/bronze',
+	'kubejs:red_ingot',
+	'kubejs:blue_ingot',
+	'kubejs:yellow_ingot',
+	'kubejs:white_ingot',
+	'kubejs:black_ingot',
 ]
 
 let block8 = [
@@ -1723,11 +1752,13 @@ let platemts = [
 ]
 
 let casings = [
-	'kubejs:casing_ciron'
+	'kubejs:casing_ciron',
+	'kubejs:casing_invar'
 ]
 
 let casingsmts = [
-	'kubejs:plate_compressed_iron'
+	'kubejs:plate_compressed_iron',
+	'#forge:plates/invar'
 ]
 
 let removerecipeid = [
@@ -1756,6 +1787,10 @@ let removerecipe = [
 let removemirror = [
 	'pneumaticcraft:assembly_io_unit_import',
 	'pneumaticcraft:assembly_io_unit_export',
+]
+
+let removeiecrafting = [
+	'immersiveengineering:rs_engineering'
 ]
 
 let unify = [

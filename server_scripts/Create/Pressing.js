@@ -15,3 +15,17 @@ onEvent('recipes', event => {
     for(let i = 0; i < block4.length; i++)
     event.recipes.createCompacting(block4[i], [Item.of(materialtoblock4[i], 4)]).heated()
 })
+
+
+
+//Sheets
+onEvent('recipes', event => {
+event.recipes.createSequencedAssembly('kubejs:sheet_aluminum', '#forge:plates/aluminum', [
+    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated(),
+    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated(),
+    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated(),
+    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated(),
+    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated(),
+    event.recipes.createCutting('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated()
+  ]).transitionalItem('kubejs:sheet_aluminum_icp').loops(1)
+})

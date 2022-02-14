@@ -49,6 +49,14 @@ onEvent('recipes', event => {
 
 
 
+//Remove RS Engineering
+onEvent('recipes', event => {
+  for(let i = 0; i < removeiecrafting.length; i++)
+  event.remove({output: removeiecrafting[i], type: 'immersiveengineering:turn_and_copy'})
+})
+
+
+
 //Add recipes stripped log->wood with chisel
 onEvent('recipes', event => {
   for(let i = 0; i < planks.length; i++)
@@ -194,6 +202,8 @@ onEvent('recipes', event => {
   })
 })
 
+
+
 //Create
 onEvent('recipes', event => {
 //Shaft
@@ -326,6 +336,98 @@ onEvent('recipes', event => {
     Z: '#forge:ingots/zinc',
     S: '#forge:string',
     W: '#forge:rods/wooden'
+  }),
+  //Invar Machine Hull
+  event.shaped('kubejs:hull_invar',
+  ['PSP','SCS','RSR'], {
+    C: 'kubejs:casing_invar',
+    P: 'kubejs:precision_mechanism_advanced',
+    R: 'immersiveengineering:wirecoil_copper',
+    S: '#forge:plates/steel'
+  }),
+  //Redstone Engineering Block
+  event.shaped('immersiveengineering:rs_engineering',
+  ['RSR','SCS','RSR'], {
+    C: 'kubejs:hull_ciron',
+    R: 'immersiveengineering:wirecoil_copper',
+    S: 'kubejs:red_ingot'
+  }),
+  //Heavy Engineering Block
+  event.shaped('4x immersiveengineering:heavy_engineering',
+  ['RSR','SCS','RSR'], {
+    R: 'immersiveengineering:sheetmetal_steel',
+    C: 'kubejs:hull_invar',
+    S: 'immersiveengineering:component_steel'
+  }),
+  //Light Engineering Block
+  event.shaped('4x immersiveengineering:light_engineering',
+  ['RSR','SCS','RSR'], {
+    R: 'immersiveengineering:sheetmetal_iron',
+    C: 'kubejs:hull_invar',
+    S: 'immersiveengineering:component_iron'
+  }),
+  //kinetic Dynamo
+  event.shaped('immersiveengineering:dynamo',
+  [' R ','CHC','PPP'], {
+    R: 'immersiveengineering:coil_lv',
+    H: 'kubejs:hull_invar',
+    C: 'kubejs:red_ingot',
+    P: '#forge:plates/iron'
+  }),
+  //LV Capacitor
+  event.shaped('immersiveengineering:capacitor_lv',
+  ['RRR','CHC','PIP'], {
+    R: '#forge:plates/iron',
+    H: 'kubejs:casing_invar',
+    C: 'immersiveengineering:coil_lv',
+    P: '#forge:treated_wood',
+    I: 'kubejs:red_ingot'
+  }),
+  //MV Capacitor
+  event.shaped('immersiveengineering:capacitor_mv',
+  ['RRR','CHC','PIP'], {
+    R: 'kubejs:plate_compressed_iron',
+    H: 'kubejs:casing_invar',
+    C: 'immersiveengineering:coil_mv',
+    P: '#forge:treated_wood',
+    I: 'kubejs:block_red'
+  }),
+  //HV Capacitor
+  event.shaped('immersiveengineering:capacitor_hv',
+  ['RRR','CHC','PIP'], {
+    R: '#forge:plates/steel',
+    H: 'kubejs:casing_invar',
+    C: 'immersiveengineering:coil_hv',
+    P: '#forge:treated_wood',
+    I: 'kubejs:block_red'
+  })
+  //Thermoelectric Generator
+  event.shaped('immersiveengineering:thermoelectric_generator',
+  ['RRR','CHC','POP'], {
+    R: '#forge:plates/steel',
+    H: 'kubejs:hull_invar',
+    C: '#forge:plates/constantan',
+    P: 'kubejs:plate_compressed_iron',
+    O: 'immersiveengineering:coil_hv'
+  })
+  //Garden Cloche
+  event.recipes.createMechanicalCrafting('immersiveengineering:cloche', [
+    'GGVGG',
+    'G   G',
+    'G   G',
+    'G   G',
+    'G   G',
+    'TTTTT',
+    'TRCRT',
+    'TRPRT',
+    'TTTTT'
+  ], {
+    V: 'immersiveengineering:electron_tube',
+    G: '#forge:glass',
+    T: '#forge:treated_wood',
+    C: 'immersiveengineering:coil_hv',
+    P: 'pneumaticcraft:printed_circuit_board',
+    R: 'kubejs:red_ingot'
   })
 })
 
@@ -339,14 +441,18 @@ onEvent('recipes', event => {
     C: 'kubejs:casing_ciron'
   }),
   //Pressure Chamber Interface
-  event.shapeless('pneumaticcraft:pressure_chamber_interface',
-  ['pneumaticcraft:pressure_chamber_wall','kubejs:hull_ciron','minecraft:hopper'], 
-  ),
+  event.shaped('pneumaticcraft:pressure_chamber_interface',
+  ['NHN','RCR','NHN'], {
+    H: 'minecraft:hopper',
+    N: '#forge:plates/netherite',
+    C: 'kubejs:hull_ciron',
+    R: 'pneumaticcraft:reinforced_bricks',
+  }),
   //Compressed Iron Machine Hull
   event.shaped('kubejs:hull_ciron',
   ['PSP','SCS','RSR'], {
     C: 'kubejs:casing_ciron',
-    R: 'immersiveengineering:wirecoil_steel',
+    R: 'immersiveengineering:wirecoil_copper',
     P: 'create:precision_mechanism',
     S: '#forge:plates/invar'
   }),
@@ -382,7 +488,6 @@ onEvent('recipes', event => {
     P: 'kubejs:precision_mechanism_advanced',
     S: 'kubejs:plate_compressed_iron',
     B: 'pneumaticcraft:printed_circuit_board'
-
   }),
   //Assembly IO Unit(export)
   event.shaped('pneumaticcraft:assembly_io_unit_export',
