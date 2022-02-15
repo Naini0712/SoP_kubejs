@@ -57,6 +57,14 @@ onEvent('recipes', event => {
 
 
 
+//Remove Recipes from Pressure chamber Wall 
+onEvent('recipes', event => {
+  for(let i = 0; i < pcw.length; i++)
+  event.remove({id: pcw[i], type: "pneumaticcraft:pressure_chamber"})
+})
+
+
+
 //Add recipes stripped log->wood with chisel
 onEvent('recipes', event => {
   for(let i = 0; i < planks.length; i++)
@@ -318,11 +326,12 @@ event.shaped('create:chute',
   })
 //Advanced Precision Mechanism
 event.recipes.createSequencedAssembly('kubejs:precision_mechanism_advanced', '#forge:plates/steel', [
-    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['create:incomplete_large_cogwheel', 'create:cogwheel']),
-    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['create:incomplete_large_cogwheel', 'create:large_cogwheel']),
-    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['create:incomplete_large_cogwheel', 'pneumaticcraft:compressed_iron_gear']),
-    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['create:incomplete_large_cogwheel', 'kubejs:red_ingot']),
-    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['create:incomplete_large_cogwheel', 'thermal:enderium_nugget']),
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['kubejs:precision_mechanism_advanced_icp', 'create:cogwheel']),
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['kubejs:precision_mechanism_advanced_icp', 'create:large_cogwheel']),
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['kubejs:precision_mechanism_advanced_icp', 'pneumaticcraft:compressed_iron_gear']),
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['kubejs:precision_mechanism_advanced_icp', 'kubejs:red_ingot']),
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['kubejs:precision_mechanism_advanced_icp', 'pneumaticcraft:plastic']),
+    event.recipes.createDeploying('kubejs:precision_mechanism_advanced_icp', ['kubejs:precision_mechanism_advanced_icp', 'thermal:enderium_nugget']),
   ]).transitionalItem('kubejs:precision_mechanism_advanced_icp').loops(9)
 })
 
@@ -348,7 +357,7 @@ onEvent('recipes', event => {
   //Redstone Engineering Block
   event.shaped('immersiveengineering:rs_engineering',
   ['RSR','SCS','RSR'], {
-    C: 'kubejs:hull_ciron',
+    C: 'kubejs:hull_invar',
     R: 'immersiveengineering:wirecoil_copper',
     S: 'kubejs:red_ingot'
   }),
@@ -387,7 +396,7 @@ onEvent('recipes', event => {
   event.shaped('immersiveengineering:capacitor_mv',
   ['RRR','CHC','PIP'], {
     R: 'kubejs:plate_compressed_iron',
-    H: 'kubejs:casing_invar',
+    H: 'immersiveengineering:capacitor_lv',
     C: 'immersiveengineering:coil_mv',
     P: '#forge:treated_wood',
     I: 'kubejs:block_red'
@@ -396,7 +405,7 @@ onEvent('recipes', event => {
   event.shaped('immersiveengineering:capacitor_hv',
   ['RRR','CHC','PIP'], {
     R: '#forge:plates/steel',
-    H: 'kubejs:casing_invar',
+    H: 'immersiveengineering:capacitor_mv',
     C: 'immersiveengineering:coil_hv',
     P: '#forge:treated_wood',
     I: 'kubejs:block_red'
@@ -516,4 +525,9 @@ onEvent('recipes', event => {
     S: 'kubejs:plate_compressed_iron',
     B: 'pneumaticcraft:printed_circuit_board'
   })
+  //Printed Circuit Board
+  event.recipes.createSequencedAssembly('pneumaticcraft:printed_circuit_board', 'pneumaticcraft:unassembled_pcb', [
+    event.recipes.createDeploying('kubejs:pcb_icp', ['kubejs:pcb_icp', 'pneumaticcraft:capacitor']),
+    event.recipes.createDeploying('kubejs:pcb_icp', ['kubejs:pcb_icp', 'pneumaticcraft:transistor']),
+  ]).transitionalItem('kubejs:pcb_icp').loops(2)
 })

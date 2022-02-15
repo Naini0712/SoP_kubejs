@@ -134,4 +134,81 @@ onEvent('recipes', event => {
             ]
           }
     )
+    event.custom(
+      {
+          "type": "pneumaticcraft:pressure_chamber",
+          "inputs": [
+            {
+              "item": "pneumaticcraft:plastic",
+            },
+            {
+              "item": "immersiveengineering:circuit_board",
+            }
+          ],
+          "pressure": 1.5,
+          "results": [
+            {
+              "item": 'pneumaticcraft:empty_pcb',
+              "count": 1
+            }
+          ]
+        }
+    )
+    event.custom(
+      {
+          "type": "pneumaticcraft:pressure_chamber",
+          "inputs": [
+            {
+              "item": "pneumaticcraft:plastic",
+            },
+            {
+              "type": "pneumaticcraft:stacked_item",
+              "item": "minecraft:gold_nugget",
+              "count": 2
+            },
+            {
+              "item": "minecraft:paper",
+            },
+            {
+              "type": "pneumaticcraft:stacked_item",
+              "item": "kubejs:sheet_aluminum",
+              "count": 2
+            }
+          ],
+          "pressure": 1,
+          "results": [
+            {
+              "item": 'pneumaticcraft:capacitor',
+              "count": 1
+            }
+          ]
+        }
+    )
+    event.custom(
+      {
+          "type": "pneumaticcraft:pressure_chamber",
+          "inputs": [
+            {
+              "item": "pneumaticcraft:plastic",
+            },
+            {
+              "type": "pneumaticcraft:stacked_item",
+              "item": "minecraft:gold_nugget",
+              "count": 3
+            },
+            {
+              "type": "pneumaticcraft:stacked_item",
+              "item": "appliedenergistics2:silicon",
+              "count": 3
+            }
+          ],
+          "pressure": 1,
+          "results": [
+            {
+              "item": 'pneumaticcraft:transistor',
+              "count": 1
+            }
+          ]
+        }
+    )
 })

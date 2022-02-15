@@ -490,7 +490,7 @@ let removecraftingid = [
 	'immersiveengineering:capacitor_mv',
 	'immersiveengineering:capacitor_hv',
 	'immersiveengineering:thermoelectric_generator',
-	'immersiveengineering:cloche'
+	'immersiveengineering:cloche',
   ]
   
   let removecraftingoredictsd = [
@@ -1790,7 +1790,8 @@ let removemirror = [
 ]
 
 let removeiecrafting = [
-	'immersiveengineering:rs_engineering'
+	'immersiveengineering:rs_engineering',
+	'pneumaticccraft:printed_circuit_board'
 ]
 
 let unify = [
@@ -1905,4 +1906,10 @@ let lingotbasemts = [
 	'#forge:ingots/iron',
 	'#forge:ingots/netherite',
 	'#forge:ingots/gold',
+]
+
+let pcw = [
+	'pneumaticcraft:pressure_chamber/empty_pcb',
+	'pneumaticcraft:pressure_chamber/transistor',
+	'pneumaticcraft:pressure_chamber/capacitor',
 ]

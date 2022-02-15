@@ -51,4 +51,6 @@ onEvent('item.registry', event => {
     event.create('white_ingot').displayName('White Ingot')
     event.create('yellow_ingot').displayName('Yellow Ingot')
     event.create('black_ingot').displayName('Black Ingot')
+    //PCB
+    event.create('pcb_icp').type('create:sequenced_assembly').displayName('Incomplete PCB')
   }) 
