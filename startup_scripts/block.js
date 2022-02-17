@@ -99,3 +99,23 @@ onEvent('block.registry', event => {
        .hardness(0.5)
        .displayName('Invar Machine Hull')
 })
+
+
+
+//Shadow Steel Machine Hull
+onEvent('block.registry', event => {
+  event.create('hull_shadow_steel')
+  	   .material('iron')
+       .hardness(0.5)
+       .displayName('Shadow Steel Machine Hull')
+})
+
+
+
+//Iron Machine Casing
+onEvent('block.registry', event => {
+  event.create('casing_iron')
+  	   .material('iron')
+       .hardness(0.5)
+       .displayName('iron Machine Hull')
+})

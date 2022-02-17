@@ -128,9 +128,6 @@ let removecraftingid = [
 	 'jaopca:immersiveengineering.material_to_plate_hammer.signalum',
 	 'jaopca:immersiveengineering.material_to_plate_hammer.lumium',
 	 'jaopca:immersiveengineering.material_to_plate_hammer.enderium',
-	 'thermal:fire_charge/signalum_ingot_4',
-	 'thermal:fire_charge/lumium_ingot_4',
-	 'thermal:fire_charge/enderium_ingot_2',
   ]
   
   let removecrafting = [
@@ -220,7 +217,6 @@ let removecraftingid = [
 	'thermal:signalum_dust',
 	'thermal:lumium_dust',
 	'thermal:enderium_dust',
-	'pneumaticcraft:pressure_chamber_interface',
   ]
   
   let removecraftingoredict = [
@@ -328,13 +324,18 @@ let removecraftingid = [
 	'jaopca:storage_blocks.to_storage_block.saltpeter',
 	'jaopca:storage_blocks.to_storage_block.wood',
 	'jaopca:storage_blocks.to_storage_block.platinum',
-	'pneumaticcraft:pressure_chamber_valve',
-	'pneumaticcraft:thermopneumatic_processing_plant',
-	'pneumaticcraft:refinery_output',
-	'pneumaticcraft:assembly_io_unit_import',
-	'pneumaticcraft:assembly_io_unit_export',
-	'pneumaticcraft:assembly_drill',
-	'pneumaticcraft:assembly_laser',
+	//Remove Bookshelves
+	'minecraft:bookshelf',
+	'blue_skies:bluebright_bookshelf',
+	'blue_skies:starlit_bookshelf',
+	'blue_skies:frostbright_bookshelf',
+	'blue_skies:lunar_bookshelf',
+	'blue_skies:dusk_bookshelf',
+	'blue_skies:maple_bookshelf',
+	'blue_skies:cherry_bookshelf',
+	'theabyss:blaru_bookshelf',
+	'theabyss:jungle_bookshelf',
+	'theabyss:ruma_bookshelf',
   ]
 
   //"sd" means "shaped"
@@ -465,32 +466,6 @@ let removecraftingid = [
 	'tconstruct:scorched_bricks_stairs',
 	'tconstruct:scorched_road_stairs',
 	'outer_end:azure_stairs',
-	'create:shaft',
-	'create:cogwheel',
-	'create:large_cogwheel',
-	'create:andesite_alloy',
-	'create:brass_casing',
-	'create:andesite_casing',
-	'create:sail_frame',
-	'create:basin',
-	'create:empty_blaze_burner',
-	'create:depot',
-	'pneumaticcraft:pressure_chamber_wall',
-	'pneumaticcraft:pressure_chamber_glass',
-	'pneumaticcraft:pressure_chamber_interface',
-	'pneumaticcraft:refinery',
-	'pneumaticcraft:thermopuneumatic_processing_plant',
-	'pneumaticcraft:assembly_io_unit_import',
-	'pneumaticcraft:assembly_io_unit_export',
-	'immersiveengineering:rs_engineering',
-	'immersiveengineering:heavy_engineering',
-	'immersiveengineering:light_engineering',
-	'immersiveengineering:dynamo',
-	'immersiveengineering:capacitor_lv',
-	'immersiveengineering:capacitor_mv',
-	'immersiveengineering:capacitor_hv',
-	'immersiveengineering:thermoelectric_generator',
-	'immersiveengineering:cloche',
   ]
   
   let removecraftingoredictsd = [
@@ -594,20 +569,6 @@ let removecraftingid = [
 	'theabyss:sal_shroom_log',
 	'theabyss:slimed_log',
 	'theabyss:frozen_log',
-  ]
-  
-  let bookshelves = [
-	'minecraft:bookshelf',
-	'blue_skies:bluebright_bookshelf',
-	'blue_skies:starlit_bookshelf',
-	'blue_skies:frostbright_bookshelf',
-	'blue_skies:lunar_bookshelf',
-	'blue_skies:dusk_bookshelf',
-	'blue_skies:maple_bookshelf',
-	'blue_skies:cherry_bookshelf',
-	'theabyss:blaru_bookshelf',
-	'theabyss:jungle_bookshelf',
-	'theabyss:ruma_bookshelf',
   ]
   
   let saws = [
@@ -1724,7 +1685,9 @@ let plates = [
 	'immersiveengineering:plate_uranium',
 	'immersiveengineering:plate_steel',
 	'kubejs:plate_zinc',
-	'kubejs:plate_andesite_alloy'
+	'kubejs:plate_andesite_alloy',
+	'kubejs:plate_compressed_iron',
+	'kubejs:plate_shadow_steel'
 ]
 
 let platemts = [
@@ -1748,51 +1711,26 @@ let platemts = [
 	'#forge:ingots/uranium',
 	'#forge:ingots/steel',
 	'#forge:ingots/zinc',
-	'create:andesite_alloy'
+	'create:andesite_alloy',
+	'pneumaticcraft:ingot_iron_compressed',
+	'create:shadow_steel'
 ]
 
 let casings = [
 	'kubejs:casing_ciron',
-	'kubejs:casing_invar'
+	'kubejs:casing_invar',
+	'create:shadow_steel_casing',
+	'kubejs:casing_iron'
 ]
 
 let casingsmts = [
 	'kubejs:plate_compressed_iron',
-	'#forge:plates/invar'
+	'#forge:plates/invar',
+	'kubejs:plate_shadow_steel',
+	'jaopca:boss_tools_compresseds.iron',
 ]
 
-let removerecipeid = [
-	'tconstruct:smeltery/alloys/molten_enderium',
-	'tconstruct:smeltery/alloys/molten_signalum',
-	'tconstruct:smeltery/alloys/molten_lumium',
-]
 
-let removerecipeoredict = []
-
-let removerecipe = [
-	'theabyss:blaru_planks',
-	'theabyss:jungle_planks',
-	'theabyss:ruma_planks',
-	'theabyss:roggen_planks',
-	'theabyss:tantra_planks',
-	'theabyss:bog_planks',
-	'theabyss:sal_planks',
-	'theabyss:slimed_planks',
-	'theabyss:frozen_planks',
-	'theabyss:blaru_bookshelf',
-	'theabyss:jungle_bookshelf',
-	'theabyss:ruma_bookshelf',
-]
-
-let removemirror = [
-	'pneumaticcraft:assembly_io_unit_import',
-	'pneumaticcraft:assembly_io_unit_export',
-]
-
-let removeiecrafting = [
-	'immersiveengineering:rs_engineering',
-	'pneumaticccraft:printed_circuit_board'
-]
 
 let unify = [
 	//plates
@@ -1908,8 +1846,30 @@ let lingotbasemts = [
 	'#forge:ingots/gold',
 ]
 
-let pcw = [
-	'pneumaticcraft:pressure_chamber/empty_pcb',
-	'pneumaticcraft:pressure_chamber/transistor',
-	'pneumaticcraft:pressure_chamber/capacitor',
+let kubeplates = [
+	'kubejs:plate_andesite_alloy',
+	'kubejs:plate_zinc',
+	'kubejs:plate_compressed_iron',
+	'kubejs:plate_shadow_steel'
+]
+
+let kubeplatemts = [
+	'create:andesite_alloy',
+	'#forge:ingots/zinc',
+	'pneumaticcraft:ingot_iron_compressed',
+	'create:shadow_steel'
+]
+
+let bookshelves = [
+	'minecraft:bookshelf',
+	'blue_skies:bluebright_bookshelf',
+	'blue_skies:starlit_bookshelf',
+	'blue_skies:frostbright_bookshelf',
+	'blue_skies:lunar_bookshelf',
+	'blue_skies:dusk_bookshelf',
+	'blue_skies:maple_bookshelf',
+	'blue_skies:cherry_bookshelf',
+	'theabyss:blaru_bookshelf',
+	'theabyss:jungle_bookshelf',
+	'theabyss:ruma_bookshelf',
 ]

@@ -21,11 +21,19 @@ onEvent('recipes', event => {
 //Sheets
 onEvent('recipes', event => {
 event.recipes.createSequencedAssembly('kubejs:sheet_aluminum', '#forge:plates/aluminum', [
-    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated(),
-    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated(),
-    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated(),
-    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated(),
-    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated(),
-    event.recipes.createCutting('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp').heated()
+    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp'),
+    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp'),
+    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp'),
+    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp'),
+    event.recipes.createPressing('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp'),
+    event.recipes.createCutting('kubejs:sheet_aluminum_icp', 'kubejs:sheet_aluminum_icp')
   ]).transitionalItem('kubejs:sheet_aluminum_icp').loops(1)
+})
+
+
+
+//Plate
+onEvent('recipes', event => {
+    for(let i = 0; i < kubeplates.length; i++)
+    event.recipes.createPressing(kubeplates[i], kubeplatemts[i])
 })

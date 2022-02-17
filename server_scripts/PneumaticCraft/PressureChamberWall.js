@@ -142,7 +142,7 @@ onEvent('recipes', event => {
               "item": "pneumaticcraft:plastic",
             },
             {
-              "item": "immersiveengineering:circuit_board",
+              "item": "immersiveengineering:logic_circuit",
             }
           ],
           "pressure": 1.5,
@@ -206,6 +206,60 @@ onEvent('recipes', event => {
           "results": [
             {
               "item": 'pneumaticcraft:transistor',
+              "count": 1
+            }
+          ]
+        }
+    )
+    event.custom(
+      {
+          "type": "pneumaticcraft:pressure_chamber",
+          "inputs": [
+            {
+              "item": "pneumaticcraft:printed_circuit_board",
+            },
+            {
+              "item": "kubejs:precision_mechanism_advanced",
+            }
+          ],
+          "pressure": 4,
+          "results": [
+            {
+              "item": 'kubejs:precision_mechanism_elite',
+              "count": 1
+            }
+          ]
+        }
+    )
+    event.custom(
+      {
+          "type": "pneumaticcraft:pressure_chamber",
+          "inputs": [
+            {
+              "item": "minecraft:netherite_ingot",
+            }
+          ],
+          "pressure": 4,
+          "results": [
+            {
+              "item": 'kubejs:ingot_compressed_netherite',
+              "count": 1
+            }
+          ]
+        }
+    )
+    event.custom(
+      {
+          "type": "pneumaticcraft:pressure_chamber",
+          "inputs": [
+            {
+              "item": "minecraft:netherite_block",
+            }
+          ],
+          "pressure": 4,
+          "results": [
+            {
+              "item": 'kubejs:block_compressed_netherite',
               "count": 1
             }
           ]

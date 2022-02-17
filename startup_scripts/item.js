@@ -42,15 +42,23 @@ onEvent('item.registry', event => {
     event.create('plate_andesite_alloy').displayName('Andesite Alloy Plate'),
     event.create('plate_zinc').displayName('Zinc Plate'),
     event.create('plate_compressed_iron').displayName('Compressed Iron Plate'),
+    event.create('plate_shadow_steel').displayName('Shadow Steel Plate'),
     //Advanced Precision Mechanism
     event.create('precision_mechanism_advanced_icp').type('create:sequenced_assembly').displayName('Incomplete Advanced Precision Mechanism')
     event.create('precision_mechanism_advanced').displayName('Advanced Precision Mechanism'),
+    //Elite Precision Mechanism
+    event.create('precision_mechanism_elite').displayName('Elite Precision Mechanism'),
+    //Ultimate Precision Mechanism
+    event.create('precision_mechanism_ultimate').displayName('Ultimate Precision Mechanism'),
     //Ludicrous Ingots
-    event.create('red_ingot').displayName('Red Ingot'),
-    event.create('blue_ingot').displayName('Blue Ingot')
-    event.create('white_ingot').displayName('White Ingot')
-    event.create('yellow_ingot').displayName('Yellow Ingot')
-    event.create('black_ingot').displayName('Black Ingot')
+    event.create('red_ingot').displayName('Red Alloy Ingot'),
+    event.create('blue_ingot').displayName('Blue Alloy Ingot')
+    event.create('white_ingot').displayName('White Alloy Ingot')
+    event.create('yellow_ingot').displayName('Yellow Alloy Ingot')
+    event.create('black_ingot').displayName('Black Alloy Ingot')
     //PCB
     event.create('pcb_icp').type('create:sequenced_assembly').displayName('Incomplete PCB')
+    //Compressed Netherite
+    event.create('ingot_compressed_netherite').displayName('Compressed Netherite Ingot')
+    event.create('block_compressed_netherite').displayName('Compressed Netherite block')
   }) 
